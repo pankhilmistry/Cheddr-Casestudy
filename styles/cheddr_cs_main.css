@@ -9,7 +9,9 @@ body {
 }
 
 section.cheddr-cs{
-  background: -webkit-linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(255, 255, 255, 1)); 
+  background: -webkit-linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(255, 255, 255, 1));
+  margin: 0;
+  padding: 0;
 }
 
 main.cheddr-cs {
@@ -44,7 +46,7 @@ main.cheddr-cs {
 .landing{
   width: calc(100vw - 30px);
   height: calc(100vw - 30px);
-  background: url(../images/hero.png);
+  background: url(../images/hero.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -112,7 +114,6 @@ main.cheddr-cs {
   font-size:2rem;
   margin:0;
   padding: .25rem;
-  vertical-align: middle;
  }
  .description h4, .description p{
   margin: .25rem auto;
@@ -143,7 +144,7 @@ a.btn{
 
 /*-----------------------Common Styles----------------------------------*/
 
-.summary, .challenge, .solution, .design-process, .conclusion {
+.summary, .challenge, .solution, .design-process, .conclusion{
   margin: 1rem auto;
   padding: 1rem;
   width: 50vw;
@@ -157,7 +158,13 @@ a.btn{
   margin-top: 8rem;
 }
 
-h1.section-headings, h2.design-stage-headings, h3.design-stage-captions{
+.section-headings, .design-stage-headings {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section-headings h1, .design-stage-headings h2, h3.design-stage-captions{
   font-size: 2.5rem;
   font-weight: 700;
   color: #ffc900;
@@ -165,7 +172,7 @@ h1.section-headings, h2.design-stage-headings, h3.design-stage-captions{
   padding: 1rem 0;
 }
 
-h2.design-stage-headings{
+.design-stage-headings h2{
   font-size: 1.75rem;
   color: #222;
 }
@@ -215,9 +222,9 @@ p.section-content {
   padding: 0.5rem 2rem;
 }
 
-.specsheet-content ul li, .personas ul li, .ca ul li{
+.specsheet-content ul li,.personas ul li, .ca ul li{
   margin: 0;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
 }
 .specsheet-content:nth-of-type(1) {
   border-right: 1px solid #222;
@@ -288,7 +295,7 @@ p.section-content {
 .personas {
   margin: 2rem 0;
   padding: 5rem 0;
-  background-image: url(../images/personas_bg.png);
+  background-image: url(../images/personas_bg.webp);
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,6 +308,13 @@ p.section-content {
   margin: 0 auto;
   width: 80%;
 }
+
+.personas-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .personas .viewall a.btn, .ca a.btn{
   color: #fff;
   border: 2px solid #fff;
@@ -322,10 +336,15 @@ p.section-content {
 }
 
 .personas-bio img{
+  margin-right: 2rem;
   height: 100%;
   border: 2px solid #ffc900;
   border-radius: 100%;
   box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.personas-bio ul {
+  padding: 0;
 }
 
 .personas p{
@@ -427,10 +446,60 @@ q{
   font-style: italic;
 }
 
-img.infoarch{
+img.wideimages{
   width: 100vw;
+  padding-bottom: 2rem;
 }
 
+/*-----------------------Visual Design & Brand Identity----------------------------------*/
+
+.inlineimages, .logo-construct, .two-wideimages{
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+img.inlineimages{
+  height: 100%;
+}
+
+.logo-construct {
+  width: 80vw;
+}
+
+img.logo-construct {
+  height: 100%;
+}
+
+img.logo-construct:nth-of-type(2){
+  display: none;
+}
+
+.two-wideimages{
+  width: 100vw;
+  padding: 0;
+  flex-direction: row;
+}
+
+img.two-wideimages{
+  width: 50vw;
+  height: 100%;
+}
+
+.signature hr{
+  margin:2rem 0;
+  padding:0;
+  height: 3px;
+  width: 50%;
+  background-color: #222;
+  border:0;
+}
+
+.signature p, .signature h3 {
+  padding: .25rem 0;
+}
 /*-----------------------Media Queries----------------------------------*/
 
 
