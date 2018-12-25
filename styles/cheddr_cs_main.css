@@ -102,6 +102,7 @@ main.cheddr-cs {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: .5rem;
+  align-items: flex-end;
  }
  .description ul li {
   list-style-type: none;
