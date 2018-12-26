@@ -46,7 +46,7 @@ main.cheddr-cs {
 .landing{
   width: calc(100vw - 30px);
   height: calc(100vw - 30px);
-  background: url(../images/hero.webp);
+  background: url(../images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -294,7 +294,7 @@ p.section-content {
 .personas {
   margin: 2rem 0;
   padding: 5rem 0;
-  background-image: url(../images/personas_bg.webp);
+  background-image: url(../images/personas_bg.png);
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
