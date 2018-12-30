@@ -1,18 +1,18 @@
 /*-----------------------Media Queries----------------------------------*/
 
-/*@media (min-width: 48em) {
-  .header li {
+/*@media (min-width: 640px) {
+  header li {
     float: left;
   }
-  .header li a {
+  header li a {
     padding: 20px 30px;
   }
-  .header .menu {
+  header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
-  .header .menu-icon {
+  header .menu-icon {
     display: none;
   }
 }*/
@@ -23,6 +23,28 @@
 
 @media screen and (max-width: 640px){
 
+header nav, header.heroyellow nav{
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ header nav ul, header.heroyellow nav ul{
+  margin: 0;
+  padding:1.25rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+ }
+
+
+ header nav ul li, header.heroyellow nav ul li, header nav ul li a, header.heroyellow nav ul li a{
+  margin: 0;
+  padding:0;
+}
 
  #hero, #hero-mywork, #hero-aboutme {
   width: 100vw;
@@ -246,6 +268,7 @@ p.journey-text {
 }
 
 #lastsection h3:nth-of-type(2){
+  font-size: 1.25rem;
   padding-top: 2rem;
 }
 
@@ -257,10 +280,10 @@ p.journey-text {
 #lastsection ul.socialmedia li{
   padding: 0;
   justify-content: flex-start;
+  align-items: center;
 }
 
 ul.socialmedia li a{
-  font-size: 1.75rem;
   padding: 0 2rem 0 0;
  }
 
